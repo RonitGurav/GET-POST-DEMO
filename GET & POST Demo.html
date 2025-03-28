@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET & POST Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .box { margin: 20px auto; padding: 20px; border: 1px solid #ccc; width: 300px; }
+        .response { font-weight: bold; color: green; }
+    </style>
+</head>
+<body>
+    <h2>GET & POST Request Demo</h2>
+    
+    <div class="box">
+        <h3>GET Request</h3>
+        <button onclick="document.getElementById('getResponse').innerText = 'GET Response: Here is your requested data!'">Fetch Data</button>
+        <p id="getResponse" class="response">Response will appear here</p>
+    </div>
+
+    <div class="box">
+        <h3>POST Request</h3>
+        <input id="postData" placeholder="Enter your name...">
+        <button onclick="let data = document.getElementById('postData').value; document.getElementById('postResponse').innerText = data ? `POST Response: Hello, ${data}!` : 'POST Response: Please enter some data!'">Send Data</button>
+        <p id="postResponse" class="response">Response will appear here</p>
+    </div>
+</body>
+</html>
